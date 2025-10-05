@@ -1,0 +1,196 @@
+.dept-container {
+  max-width: 960px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding: 0 24px;
+}
+
+.dept-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #007acc;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+.dept-action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dept-search, .emp-search {
+  width: 280px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 1.5px solid #007acc;
+  outline-offset: 2px;
+}
+
+.dept-search:focus, .emp-search:focus {
+  border-color: #005f99;
+  box-shadow: 0 0 6px #005f9988;
+}
+
+.add-btn {
+  background-color: #007acc;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 122, 204, 0.6);
+  user-select: none;
+}
+
+.add-btn:hover {
+  background-color: #005f99;
+}
+
+.dept-lists {
+  display: flex;
+  gap: 20px;
+  min-height: 400px;
+}
+
+.dept-list, .emp-list {
+  flex: 1;
+  border: 1.5px solid #007acc;
+  border-radius: 10px;
+  padding: 16px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.dept-item {
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  transition: background-color 0.3s;
+}
+
+.dept-item:hover {
+  background-color: #cce6ff;
+}
+
+.dept-item.selected {
+  background-color: #80b8ff;
+  color: white;
+}
+
+.emp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.emp-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+}
+
+.delete-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #bf2c2c;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 14px;
+  padding: 24px 32px;
+  width: 320px;
+  max-width: 90%;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+  user-select: none;
+}
+
+.modal-content h2 {
+  margin-bottom: 18px;
+  color: #007acc;
+  font-weight: 800;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.8px solid #ccd6e6;
+  margin-bottom: 22px;
+  font-size: 1rem;
+  outline-offset: 2px;
+  transition: border-color 0.3s;
+}
+
+.modal-input:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 8px #007acc88;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.save-btn, .cancel-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.save-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #1e8449;
+}
+
+.cancel-btn {
+  background-color: #7f8c8d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #5e6d6a;
+}

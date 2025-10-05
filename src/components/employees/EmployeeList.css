@@ -1,0 +1,312 @@
+.emp-container {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 36px 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(90,40,25,0.11);
+}
+.emp-container h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
+    color: rgb(12, 12, 155);
+}
+.emp-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.emp-bar input[type="text"] {
+  padding: 5px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+.add-btn {
+  padding: 7px 16px;
+  border: none;
+  background: #236f56;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add-btn:hover { background: #195f47; }
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.emp-table th, .emp-table td {
+  padding: 9px 8px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.emp-table th { background: #e7e7e7; }
+.emp-table td {
+  font-size: 15px;
+}
+.v, .e, .d {
+  padding: 4px 10px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.97rem;
+  cursor: pointer;
+}
+.v { background: #daf0f3; color: #196B71;}
+.e { background: #f6f1da; color: #9c9607;}
+.d { background: #f6dada; color: #ac0505;}
+.v:hover { background: #b7e3eb; }
+.e:hover { background: #efe784;}
+.d:hover { background: #f18e94; }
+.emp-form-modal {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(30, 29, 41, 0.14);
+}
+.emp-form {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px 26px;
+  min-width: 320px;
+  box-shadow: 0 2px 21px #cbcbf773;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.emp-form input {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.emp-form button {
+  padding: 7px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #236f56;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.emp-form button[type="button"] {
+  background: #9b2e2e;
+}
+.emp-form button:hover { opacity: 0.95;}
+.emp-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  padding: 36px 32px;
+  border-radius: 20px;
+  box-shadow: 0 3px 30px rgba(0,0,0,0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.emp-bar, .filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  
+}
+
+.filter-bar input {
+  flex: 1 1 160px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.add-btn, .bulk-delete-btn {
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background-color: #257346;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover, .bulk-delete-btn:hover {
+  background-color: #196738;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.emp-table th, .emp-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.emp-table th {
+  background-color: #d5f0df;
+  cursor: pointer;
+  user-select: none;
+}
+
+.emp-table tr:hover {
+  background-color: #e9f5eb;
+}
+
+button.v, button.e, button.d {
+  margin-right: 7px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button.v {
+  background-color: #9ae6b4;
+  color: #2f5233;
+}
+
+button.e {
+  background-color: #ffe699;
+  color: #6b5a03;
+}
+
+button.d {
+  background-color: #ff9999;
+  color: #7a0303;
+}
+
+button.v:hover {
+  background-color: #81ca9a;
+}
+
+button.e:hover {
+  background-color: #fddc6a;
+}
+
+button.d:hover {
+  background-color: #e76e6e;
+}
+
+.emp-form-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(40, 40, 40, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.emp-form {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  min-width: 320px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emp-form input {
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.emp-form button {
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.emp-form button[type="submit"] {
+  background-color: #257346;
+  color: #fff;
+}
+
+.emp-form button[type="button"] {
+  background-color: #b94a4a;
+  color: #fff;
+}
+
+.emp-form button[type="submit"]:hover {
+  background-color: #196738;
+}
+
+.emp-form button[type="button"]:hover {
+  background-color: #8b3b3b;
+}
+
+.pagination {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  margin-left: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #257346;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  cursor: default;
+  background-color: #aaa;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #196738;
+}
+.emp-view-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 60, 60, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.emp-view-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 14px;
+  min-width: 300px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.emp-view-content h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.export-btn {
+  margin-left: 12px;
+  padding: 8px 18px;
+  background-color: #3a8739;
+  color: white;
+ 
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #2e6c2b;
+}
